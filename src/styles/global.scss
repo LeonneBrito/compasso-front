@@ -1,0 +1,89 @@
+:root {
+  --white: #FFF;
+  
+  --gray-900: #181B23;
+  --gray-800: #1f2029;
+  --gray-700: #353646;
+  --gray-600: #4B4D63;
+  --gray-500: #616480;
+  --gray-400: #797D9A;
+  --gray-300: #9699B0;
+  --gray-200: #B3B5C6;
+  --gray-100: #D1D2DC;
+  --gray-50: #EEEEF2;
+
+  --purple-500: #8256E5;
+  --green-500: #04D361;
+  --yellow-500: #f1e05a;
+  --blue-500: #2AA9E0;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.50%;
+  }
+}
+
+body {
+  background: var(--gray-800);
+}
+
+body, input, textarea, button {
+  font: 500 1rem Inter, sans-serif;
+  color: var(--gray-50);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: Lexend, sans-serif;
+  color: var(--gray-50)
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.language {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &.other {
+    background: var(--purple-500);
+  }
+
+  &.javascript {
+    background: var(--yellow-500);
+  }
+
+  &.typescript {
+    background: var(--blue-500);
+  }
+}
+
+.react-tabs {
+  width: 75%;
+  max-width: 1280px;
+}
